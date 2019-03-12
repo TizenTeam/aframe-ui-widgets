@@ -95,6 +95,9 @@
         clearInterval(interval);
       }
     });
+    setTimeout(function(){
+      toggleSwitch.setAttribute('ui-toggle', { value: 1 });
+    }, 1000);
 
     
     setInterval(function(){
