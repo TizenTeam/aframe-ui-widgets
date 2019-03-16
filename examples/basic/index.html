@@ -96,6 +96,17 @@
       }
     });
 
+    
+    setInterval(function(){
+
+    var value = Number(valueSlider.getAttribute('ui-slider')['max']);
+    value *= Math.random();
+    valueSlider.setAttribute('ui-slider', 'value', value);
+    console.log(valueSlider);
+    }, 1000);
+
+
+    
     // changes tubular radius
     var rotaryKnob = document.querySelector('#rotaryKnob');
     rotaryKnob.addEventListener('change', function(e) {
